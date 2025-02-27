@@ -5,18 +5,23 @@
 }
 
 body {
-    background-color: rgb(255, 238, 223);
+    background-color: rgb(255, 245, 235);
 }
 
 /* <======================>  */
 /* Navigation Bar */
+
+.origami {
+    color: #a11321;
+}
+
 .brand-name {
     font-family: "Pacifico", serif;
     color: #4a1b00;
     font-weight: 500;
     font-size: 30px;
     text-decoration: none;
-    width: 20%
+    width: 30%
 }
 
 .offcanvas {
@@ -36,7 +41,7 @@ body {
 
 .login-btn:hover,
 .signUp-btn:hover {
-    background-color: #772c00;
+    background-color: #a11321;
 }
 
 .navbar-toggler {
@@ -58,7 +63,7 @@ body {
 
 .nav-link:hover,
 .nav-link:active {
-    color: #772c00;
+    color: #a11321;
 }
 
 @media (min-width: 991px) {
@@ -70,7 +75,7 @@ body {
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: #4a1b00;
+        background-color: #a11321;
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
@@ -89,22 +94,28 @@ body {
     font-family: 'Helvetica', sans-serif;
 }
 
-.p01 {
-    font-size: 60px !important;
+.first-text {
+    width: 65%;
 }
 
-.img-01 {
-    display: flex; 
-    justify-content: space-evenly;
+.p01, .p02 {
+    font-size: 54px !important;
 }
 
-.p1, .p2 {
-    border: 2px solid #4a1b00;
-    background-color: #4a1b00;
-    color: #ffeedf;
-    margin-left: 35px;
-    border-radius: 50px;
-       
+.b1, .b2 {
+    border: 2px solid #a11321;
+    background-color: #a11321;
+    color: white;
+    width: 220px;
+    height: 70px;
+    border-radius: 10px;
 }
 
+
+
+/* Resize images */
+.image-02 img {
+    width: 70%;
+    height: auto;
+}
 
