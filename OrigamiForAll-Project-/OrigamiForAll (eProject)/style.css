@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 body {
@@ -116,10 +116,12 @@ body {
     height: 70px;
     border-radius: 10px;
     border: none;
+    font-size: 20px;
 }
 
-.b1:hover, .b2:hover, .see-all-diagrams button:hover, .steps-btn button:hover {
+.b1:hover, .b2:hover, .see-all-diagrams a:hover, .steps-btn a:hover {
     background-color: #d33d4c;
+    color: white;
 }
 
 .image-02 img, .steps img {
@@ -127,18 +129,59 @@ body {
     height: auto;
 }
 
-.see-all-diagrams button, .steps-btn button {
+.see-all-diagrams a, .steps-btn a {
     border: 2px solid;
     background-color: #a11321;
     color: white;
     width: 300px;
-    height: 60px;
+    height: 70px;
     border-radius: 10px;
     border: none;
-   
+    font-size: 20px;
 }
 
 .designs-1 div img {
     width: 75%;
     height: auto;
+}
+
+.card {
+    transition: all 0.3s;
+    background-color: #fff5eb;
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.15);
+}
+
+/* <======================>  */
+/* footer */
+
+footer {
+    min-height: 120px;
+    padding: 20px 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social-links, footer .menu {
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social-links li, footer .menu li {
+    list-style: none;
+}
+
+footer .social-links li a, footer .menu li a {
+    font-size: 2em;
+    color: #a11321;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social-links li a:hover {
+    transform: translateY(-10px);
 }
