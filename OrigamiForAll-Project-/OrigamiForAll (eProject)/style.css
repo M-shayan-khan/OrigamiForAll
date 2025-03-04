@@ -21,22 +21,23 @@ body {
     font-weight: 500;
     font-size: 30px;
     text-decoration: none;
-    width: 30%
+    width: 100%;
 }
 
 .offcanvas {
     background-color: rgba(255, 255, 255, 0.50);
-    backdrop-filter: blur(10px);    
+    backdrop-filter: blur(10px);
 }
 
 .login-btn,
 .signUp-btn {
     background-color: #4a1b00;
     color: white;
-    padding: 8px 20px;
+    padding: 10px 20px;
     font-size: 14px;
     border-radius: 50px;
     transition: 0.3s background-color;
+    width: 150px;
 }
 
 .login-btn:hover,
@@ -60,6 +61,7 @@ body {
     color: #4a1b00;
     font-weight: 500;
     position: relative;
+    margin: 0 10px;
 }
 
 .nav-link:hover,
@@ -67,8 +69,10 @@ body {
     color: #a11321;
 }
 
-@media (min-width: 991px) {
-    .nav-link::before {
+@media (max-width: 991px) {
+
+    .nav-link::before,
+    .nav-link:hover::before {
         content: '';
         position: absolute;
         bottom: 0;
@@ -86,62 +90,124 @@ body {
         width: 100%;
         visibility: visible;
     }
+
+    .login-btn {
+        width: 100px;
+        margin-left: 70%;
+    }
+
+    .signUp-btn {
+        width: 100px;
+
+    }
 }
+
+@media (max-width: 768px) {
+    .login-btn {
+        width: 100px;
+        margin-left: 63%;
+    }
+
+    .signUp-btn {
+        width: 100px;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .login-btn {
+        width: 70px;
+        margin-left: 43%;
+    }
+
+    .signUp-btn {
+        width: 90px;
+
+    }
+}
+
 
 /* <======================> */
 /* Hero Section */
 
 .hero-section {
     font-family: "Marcellus", serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.images img {
+    margin-top: 30px;
 }
 
 .first-text {
     width: 65%;
+    margin: auto;
 }
 
-.p01, .p02, .p03, .p04 {
-    font-size: 54px !important;
+.para-1,
+.para-2,
+.para-3 {
+    color: black;
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+
+.p01,
+.p02,
+.p03,
+.p04 {
+    font-size: 3rem;
     color: #a11321;
 }
 
-.p1, .p2, .p3, .p4 {
+.p1,
+.p2,
+.p3,
+.p4 {
     color: #4a1b00;
 }
- 
-.b1, .b2 {
+
+.b1,
+.b2,
+.see-all-diagrams a,
+.steps-btn a {
     border: 2px solid;
     background-color: #a11321;
     color: white;
-    width: 220px;
-    height: 70px;
+    width: 250px;
+    height: 60px;
     border-radius: 10px;
     border: none;
-    font-size: 20px;
+    font-size: 17px;
+    display: inline-block;
+    text-align: center;
+
+
 }
 
-.b1:hover, .b2:hover, .see-all-diagrams a:hover, .steps-btn a:hover {
+.b1:hover,
+.b2:hover,
+.see-all-diagrams a:hover,
+.steps-btn a:hover {
     background-color: #d33d4c;
     color: white;
 }
 
-.image-02 img, .steps img {
-    width: 75%;
+.image-02 img,
+.steps img {
+    width: 100%;
+    max-width: 600px;
     height: auto;
-}
-
-.see-all-diagrams a, .steps-btn a {
-    border: 2px solid;
-    background-color: #a11321;
-    color: white;
-    width: 300px;
-    height: 70px;
-    border-radius: 10px;
-    border: none;
-    font-size: 20px;
+    margin: auto;
+    display: block;
 }
 
 .designs-1 div img {
-    width: 75%;
+    width: 100%;
     height: auto;
 }
 
@@ -149,65 +215,279 @@ body {
     transition: all 0.3s;
     background-color: #fff5eb;
     border: none;
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
 }
 
 .card:hover {
-    transform: scale(1.15);
+    transform: scale(1.10);
+}
+
+.cards {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .p01,
+    .p02,
+    .p03,
+    .p04 {
+        font-size: 2rem;
+    }
+
+    .images img {
+        height: 100px;
+        width: 100px;
+
+    }
+
+    .p1,
+    .p2,
+    .p3,
+    .p4 {
+        font-size: 1.2rem;
+    }
+
+    .b1,
+    .b2 {
+        width: 50px;
+        height: 20px;
+        font-size: 300px;
+
+    }
+
+    .see-all-diagrams a,
+    .steps-btn a {
+        width: 220px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .first-text {
+        width: 80%;
+    }
+
+    .steps img {
+        width: 100%;
+    }
+
+    .card:hover {
+        transform: scale(1.10);
+    }
+
+    .card {
+        transition: all 0.3s;
+        background-color: #fff5eb;
+        border: none;
+        width: 100%;
+        max-width: 125px;
+        margin: auto;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        gap: 9px;
+    }
+
+
+    .steps img {
+        width: 75%;
+    }
+
+    .btn {
+        height: 40px;
+        width: 70px;
+        font-size: 10px;
+        justify-content: center;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .p01,
+    .p02,
+    .p03,
+    .p04 {
+        font-size: 1.5rem;
+    }
+
+    .b1,
+    .b2,
+    .steps-btn a {
+        width: 160px;
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .see-all-diagrams a {
+        width: 160px;
+        height: 65px;
+        font-size: 13px;
+    }
+
+    .images img {
+        height: 65px;
+        width: 65px;
+
+    }
+
+    .card:hover {
+        transform: scale(1.10);
+    }
+
+    .card {
+        transition: all 0.3s;
+        background-color: #fff5eb;
+        border: none;
+        width: 100%;
+        max-width: 120px;
+        margin: auto;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
+    .card-title {
+        font-size: 10px;
+    }
+
+    .btn {
+        height: 40px;
+        width: 70px;
+        font-size: 10px;
+        justify-content: center;
+    }
 }
 
 /* <======================>  */
-/* footer */
+/* Footer */
 
 footer {
     min-height: 150px;
-    padding: 20px 45px;
+    padding: 20px 15px;
     align-items: center;
     flex-direction: column;
     font-family: sans-serif;
-    margin-top: 150px;
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 40px;
 }
 
-footer .social-links, footer .menu {
-    align-items: center;
+footer .social-links,
+footer .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     margin: 10px 0;
-    margin-right: 20px;
 }
 
-footer .social-links li, footer .menu li {
+footer .social-links li,
+footer .menu li {
     list-style: none;
 }
 
-footer .social-links li a, footer .menu li a {
-    font-size: 2em;
-    color: #a11321;
+footer .social-links li a,
+footer .menu li a {
+    font-size: 1.5rem;
+    color: #494949;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 footer .social-links li a:hover {
     transform: translateY(-10px);
-}
-
-footer .menu li a {
-     font-size: 1.2em;
-    color: #646464;
-    margin: 0 20px;
-    display: inline-block;
-    text-decoration: none;
-    transition: 0.5s;
+    color: #a11321;
 }
 
 footer .menu li a:hover {
     color: #a11321;
-    transform: scale(1.15);
+    transform: scale(1.10);
 }
 
 footer p {
     color: black;
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    margin-top: 40px;
     margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+
+    footer {
+        min-height: 150px;
+        padding: 20px 15px;
+        align-items: center;
+        flex-direction: column;
+        font-family: sans-serif;
+        margin-top: 100px;
+        text-align: center;
+        margin-right: 29px;
+    }
+
+    footer .social-links li a,
+    footer .menu li a {
+        font-size: 1.3rem;
+        color: #494949;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+
+    footer p {
+        color: black;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    footer {
+        min-height: 150px;
+        padding: 20px 15px;
+        align-items: center;
+        flex-direction: column;
+        font-family: sans-serif;
+        margin-top: 100px;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    footer .social-links li a,
+    footer .menu li a {
+        font-size: 1rem;
+        color: #494949;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+
+    footer p {
+        color: black;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+
+
 }
