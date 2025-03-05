@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Origami World</title>
+    <title>Contact Us - OrigamiForAll</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #fff5eb;
+            background-color: rgb(255, 245, 235);
+
         }
+
+        .contact-container {
+            max-width: 600px;
+            font-family: "Marcellus", serif;
+            text-align: center;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
 
         .origami {
             color: #a11321;
@@ -103,84 +116,6 @@
                 width: 100%;
                 margin-top: 10px;
 
-            }
-        }
-
-        .about-section {
-            padding: 60px 0;
-            text-align: center;
-            font-family: "Marcellus", serif;
-        }
-
-        .about-section h1,
-        .about-section h2 {
-            font-size: 2.5rem;
-            color: #a11321;
-        }
-
-        .about-section p {
-            font-size: 1.5rem;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-
-        .brand-name2 {
-            font-family: "Pacifico", serif;
-            color: #4a1b00;
-            font-weight: 500;
-            font-size: 20px;
-            text-decoration: none;
-            width: 100%;
-        }
-
-        .profile-pic {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-
-        @media (max-width: 768px) {
-
-            .about-section h1,
-            .about-section h2 {
-                font-size: 2rem;
-            }
-
-            .about-section p {
-                font-size: 1.2rem;
-            }
-
-            .brand-name2 {
-                font-size: 17px;
-            }
-
-            .profile-pic {
-                width: 200px;
-                height: 200px;
-            }
-        }
-
-        @media (max-width: 576px) {
-
-            .about-section h1,
-            .about-section h2 {
-                font-size: 1.5rem;
-            }
-
-            .about-section p {
-                font-size: 1rem;
-                width: 80%;
-            }
-
-            .brand-name2 {
-                font-size: 17px;
-            }
-
-            .profile-pic {
-                width: 150px;
-                height: 150px;
             }
         }
 
@@ -295,12 +230,11 @@
 
             footer p {
                 color: black;
-                font-size: 0.9rem;
+                text-align: center;
+                font-size: 1rem;
                 margin-top: 40px;
-                margin-right: 25px;
+                margin-left: 25px;
             }
-
-
         }
     </style>
 </head>
@@ -339,27 +273,37 @@
     </nav>
 
     <div class="container">
-        <section class="about-section">
-            <h2 class="fw-bold">About Us</h2>
-            <p class="">Welcome to <a class="brand-name2" href="#"><span class="origami">Origami</span>ForAll</a>, a
-                place
-                where the
-                ancient art of paper folding meets modern creativity. Our mission is to inspire, educate, and share the
-                beauty of origami with enthusiasts of all skill levels. Whether you're a beginner or an expert, we have
-                something for everyone!</p>
-            <p class="mb-5">Join us on this journey as we explore intricate folds, amazing designs, and the endless
-                possibilities of
-                origami.</p>
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Fill out the form below or reach us via email or phone.</p>
 
-            <hr>
-
-            <div class="container">
-                <img src="./images/Untitled design.png" alt="Your Photo" class="profile-pic mt-5">
-                <h1 class="fw-bold">- Shayan Khan -</h1>
-                <p>Hi, I'm Shayan. I'm a passionate web developer, designer, and content creator. I love creating
-                    beautiful and functional websites. Welcome to my page!</p>
+            <div class="mb-3">
+                <p><strong>Email:</strong> <a href="mailto:support@origamiforall.com">support@origamiforall.com</a></p>
+                <p><strong>Phone:</strong> +92 334 0225411</p>
             </div>
-        </section>
+
+            <p><strong>Follow us:</strong></p>
+            <div class="social-links mb-3">
+                <a href="#" class="btn btn-sm">Facebook</a>
+                <a href="#" class="btn btn-sm">Instagram</a>
+                <a href="#" class="btn btn-sm">Twitter</a>
+                <a href="#" class="btn btn-sm">Pinterest</a>
+            </div>
+
+            <form action="#" method="post">
+                <div class="mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea name="message" class="form-control" placeholder="Your Message" rows="4"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+        </div>
     </div>
 
     <footer class="d-flex justify-content-center">
@@ -381,6 +325,7 @@
         <p class="ps-4">© 2024-2025 OrigamiForAll, All Rights Reserved.</p>
 
     </footer>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
