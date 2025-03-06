@@ -23,12 +23,26 @@
             font-family: "Marcellus", serif;
             text-align: center;
             margin: 50px auto;
-            background: white;
+            background: rgb(255, 245, 235);
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
+        .contact-container h1 {
+            color: #a11321;
+            font-size: 2.5rem;
+        }
+
+        .send-btn {
+            background-color: #a11321;
+            color: white;
+        }
+
+        .send-btn:hover {
+            background-color: #d33d4c;
+            color: white;
+        }
 
         .origami {
             color: #a11321;
@@ -175,31 +189,16 @@
         @media (max-width: 768px) {
 
             footer {
-                min-height: 150px;
-                padding: 20px 15px;
-                align-items: center;
-                flex-direction: column;
-                font-family: sans-serif;
-                margin-top: 100px;
-                text-align: center;
                 margin-right: 29px;
             }
 
             footer .social-links li a,
             footer .menu li a {
                 font-size: 1.3rem;
-                color: #494949;
-                margin: 0 10px;
-                display: inline-block;
-                transition: 0.5s;
-                text-decoration: none;
             }
 
             footer p {
-                color: black;
-                text-align: center;
                 font-size: 1rem;
-                margin-top: 40px;
                 margin-left: 25px;
             }
 
@@ -208,32 +207,17 @@
         @media (max-width: 576px) {
 
             footer {
-                min-height: 150px;
-                padding: 20px 15px;
-                align-items: center;
-                flex-direction: column;
-                font-family: sans-serif;
-                margin-top: 100px;
-                text-align: center;
                 margin-right: 30px;
             }
 
             footer .social-links li a,
             footer .menu li a {
                 font-size: 1rem;
-                color: #494949;
-                margin: 0 10px;
-                display: inline-block;
-                transition: 0.5s;
-                text-decoration: none;
             }
 
             footer p {
-                color: black;
-                text-align: center;
-                font-size: 1rem;
-                margin-top: 40px;
-                margin-left: 25px;
+                font-size: 0.8rem;
+                margin-left: 10px;
             }
         }
     </style>
@@ -274,34 +258,34 @@
 
     <div class="container">
         <div class="contact-container">
-            <h1>Contact Us</h1>
-            <p>We’d love to hear from you! Fill out the form below or reach us via email or phone.</p>
+            <h1 class="fw-bold">Contact Us</h1>
+            <p class="fw-bold mb-5 fs-5">We’d love to hear from you! Fill out the form below or reach us via email or phone.</p>
 
             <div class="mb-3">
-                <p><strong>Email:</strong> <a href="mailto:support@origamiforall.com">support@origamiforall.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:support@origamiforall.com" class="text-dark">support@origamiforall.com</a></p>
                 <p><strong>Phone:</strong> +92 334 0225411</p>
             </div>
 
-            <p><strong>Follow us:</strong></p>
-            <div class="social-links mb-3">
-                <a href="#" class="btn btn-sm">Facebook</a>
-                <a href="#" class="btn btn-sm">Instagram</a>
-                <a href="#" class="btn btn-sm">Twitter</a>
-                <a href="#" class="btn btn-sm">Pinterest</a>
+            <p class="mt-5"><strong>Follow us:</strong></p>
+            <div class="social-names mb-3">
+                <a href="#" class="text-decoration-none text-dark pe-3">Facebook</a>
+                <a href="#" class="text-decoration-none text-dark pe-3">Instagram</a>
+                <a href="#" class="text-decoration-none text-dark pe-3">Twitter</a>
+                <a href="#" class="text-decoration-none text-dark ">Pinterest</a>
             </div>
 
             <form action="#" method="post">
-                <div class="mb-3">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                <div class="mb-4 mt-5">
+                    <input type="text" name="name" class="form-control border border-black" placeholder="Your Name" required>
                 </div>
-                <div class="mb-3">
-                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                <div class="mb-4">
+                    <input type="email" name="email" class="form-control border border-black" placeholder="Your Email" required>
                 </div>
-                <div class="mb-3">
-                    <textarea name="message" class="form-control" placeholder="Your Message" rows="4"
+                <div class="mb-5">
+                    <textarea name="message" class="form-control border border-black" placeholder="Your Message" rows="4"
                         required></textarea>
                 </div>
-                <button type="submit" class="btn btn-success">Send Message</button>
+                <button type="submit" class="send-btn btn">Send Message</button>
             </form>
         </div>
     </div>

@@ -117,14 +117,11 @@ body {
     margin: auto;
 }
 
-.para-1,
 .para-2,
 .para-3 {
     color: black;
     font-size: 1.5rem;
 }
-
-
 
 .p01,
 .p02,
@@ -141,8 +138,6 @@ body {
     color: #4a1b00;
 }
 
-.b1,
-.b2,
 .see-all-diagrams a,
 .steps-btn a {
     border: 2px solid;
@@ -155,12 +150,8 @@ body {
     font-size: 17px;
     display: inline-block;
     text-align: center;
-
-
 }
 
-.b1:hover,
-.b2:hover,
 .see-all-diagrams a:hover,
 .steps-btn a:hover {
     background-color: #d33d4c;
@@ -218,15 +209,7 @@ body {
     .p2,
     .p3,
     .p4 {
-        font-size: 1.2rem;
-    }
-
-    .b1,
-    .b2 {
-        width: 50px;
-        height: 20px;
-        font-size: 300px;
-
+        font-size: 1.5rem;
     }
 
     .see-all-diagrams a,
@@ -289,8 +272,6 @@ body {
         font-size: 1.5rem;
     }
 
-    .b1,
-    .b2,
     .steps-btn a {
         width: 160px;
         height: 50px;
@@ -398,31 +379,16 @@ footer p {
 @media (max-width: 768px) {
 
     footer {
-        min-height: 150px;
-        padding: 20px 15px;
-        align-items: center;
-        flex-direction: column;
-        font-family: sans-serif;
-        margin-top: 100px;
-        text-align: center;
         margin-right: 29px;
     }
 
     footer .social-links li a,
     footer .menu li a {
         font-size: 1.3rem;
-        color: #494949;
-        margin: 0 10px;
-        display: inline-block;
-        transition: 0.5s;
-        text-decoration: none;
     }
 
     footer p {
-        color: black;
-        text-align: center;
         font-size: 1rem;
-        margin-top: 40px;
         margin-left: 25px;
     }
 
@@ -431,33 +397,16 @@ footer p {
 @media (max-width: 576px) {
 
     footer {
-        min-height: 150px;
-        padding: 20px 15px;
-        align-items: center;
-        flex-direction: column;
-        font-family: sans-serif;
-        margin-top: 100px;
-        text-align: center;
         margin-right: 30px;
     }
 
     footer .social-links li a,
     footer .menu li a {
         font-size: 1rem;
-        color: #494949;
-        margin: 0 10px;
-        display: inline-block;
-        transition: 0.5s;
-        text-decoration: none;
     }
 
     footer p {
-        color: black;
-        text-align: center;
-        font-size: 1rem;
-        margin-top: 40px;
-        margin-left: 25px;
+        font-size: 0.8rem;
+        margin-left: 10px;
     }
-
-
 }
