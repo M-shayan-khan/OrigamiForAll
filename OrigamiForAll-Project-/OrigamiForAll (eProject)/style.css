@@ -26,6 +26,7 @@ body {
 .offcanvas {
     background-color: rgba(255, 245, 235, 0.7);
     backdrop-filter: blur(10px);
+    font-size: 18px;
 }
 
 .login-btn,
@@ -40,6 +41,7 @@ body {
     display: inline-block;
     text-align: center;
     transition: 0.3s;
+    box-shadow: 0 10px 30px #0005;
 }
 
 .login-btn:hover,
@@ -106,6 +108,7 @@ body {
     font-family: "Marcellus", serif;
     text-align: center;
     padding: 20px;
+    color: black;
 }
 
 .images img {
@@ -117,9 +120,9 @@ body {
     margin: auto;
 }
 
+.para-1,
 .para-2,
 .para-3 {
-    color: black;
     font-size: 1.5rem;
 }
 
@@ -150,6 +153,7 @@ body {
     font-size: 17px;
     display: inline-block;
     text-align: center;
+    box-shadow: 0 10px 30px #0005;
 }
 
 .see-all-diagrams a:hover,
@@ -179,6 +183,7 @@ body {
     width: 100%;
     max-width: 250px;
     margin: auto;
+    color: black;
 }
 
 .card:hover {

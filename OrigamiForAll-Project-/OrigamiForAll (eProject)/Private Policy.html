@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Origami Feedback Form</title>
+    <title>Privacy Policy - OrigamiForAll</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,91 +15,6 @@
     <style>
         body {
             background-color: rgb(255, 245, 235);
-        }
-
-        form * {
-            width: 100% !important;
-        }
-
-        form {
-            max-width: 400px;
-            font-family: "Marcellus", serif;
-            margin: 50px auto;
-            background: rgb(255, 245, 235);
-            padding: 30px;
-            border-radius: 10px;
-            display: flex;
-            margin: auto;
-            margin-block: 30px;
-            width: min(300px, 90vw);
-            gap: 15px;
-            flex-wrap: wrap;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            color: black;
-        }
-
-        .form-section h2 {
-            color: #a11321;
-            font-size: 2.5rem;
-        }
-
-        form input,
-        form textarea,
-        form button {
-            all: unset;
-            padding: 10px;
-            margin: 0 0 20px 0;
-            border-radius: 15px;
-            background-color: white;
-            box-shadow: 0 10px 30px #0005;
-            border: 1px solid #71717188;
-            transition: 0.3s;
-        }
-
-        form input:hover,
-        form textarea:hover,
-        form button:hover {
-            border-color: #a11321;
-        }
-
-        .submit-btn {
-            background-color: #a11321;
-            color: white;
-        }
-
-        .submit-btn:hover {
-            background-color: #d33d4c;
-        }
-
-        @media (max-width: 992px) {
-            .form-section form {
-                width: 70%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .form-section form {
-                width: 80%;
-            }
-
-            .form-section h2 {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .form-section form {
-                width: 90%;
-                font-size: 1.2rem;
-            }
-
-            .form-section h2 {
-                font-size: 1.8rem;
-            }
-
-            .submit-btn {
-                width: 100%;
-            }
         }
 
         .origami {
@@ -125,7 +40,6 @@
         .signUp-btn {
             background-color: #4a1b00;
             color: white;
-            box-shadow: 0 10px 30px #0005;
             padding: 10px 20px;
             margin: 0 10px;
             font-size: 14px;
@@ -134,6 +48,7 @@
             display: inline-block;
             text-align: center;
             transition: 0.3s;
+            box-shadow: 0 10px 30px #0005;
         }
 
         .login-btn:hover,
@@ -191,6 +106,63 @@
                 margin-top: 10px;
 
             }
+        }
+
+
+        .content-container {
+            font-family: "Marcellus", serif;
+            width: 95%;
+            margin: auto;
+            color: black;
+        }
+
+        .content-container p {
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+
+        h1 {
+            color: #a11321;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: #4a1b00;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .content-container p, ul {
+            font-size: 1rem;
+        }
+
+        h1 {
+            color: #a11321;
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            color: #4a1b00;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        }
+
+        @media (max-width: 576px) {
+            .content-container p, ul {
+            font-size: 0.7rem;
+        }
+
+        h1 {
+            color: #a11321;
+            font-size: 1.3rem;
+        }
+
+        h2 {
+            color: #4a1b00;
+            font-weight: bold;
+            font-size: 1rem;
+        }
         }
 
         footer {
@@ -281,9 +253,6 @@
             }
         }
     </style>
-
-
-
 </head>
 
 <body>
@@ -319,20 +288,50 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <form class="form-section text-center w-75 m-auto">
-            <h2 class="text-center fw-bold">Feedback Form</h2>
-            <p class="text-center mb-5 fw-bold fs-5">Share Your Thoughts – Help Us Fold a Better Experience!</p>
+    <div class="container-fluid">
+        <div class="content-container mt-5">
+            <h1 class="text-center fw-bold mb-5">Privacy Policy</h1>
+            <p class="mb-5">Last updated: <strong>March 2025</strong></p>
 
-            <input type="text" class="" id="name" placeholder="Enter your name" required>
+            <h2>1. Introduction</h2>
+            <p class="mb-5">Welcome to OrigamiForAll. Your privacy is important to us, and this policy explains how we collect, use,
+                and protect your personal information.</p>
 
-            <input type="email" class="" id="email" placeholder="Enter your email" required>
+            <h2>2. Information We Collect</h2>
+            <p>We may collect the following types of information:</p>
+            <ul>
+                <li><strong>Personal Data:</strong> Name, email, and contact information (if provided by you).</li>
+                <li><strong>Usage Data:</strong> Information about how you use our website (e.g., pages visited, time
+                    spent).</li>
+                <li  class="mb-5"><strong>Cookies & Tracking Data:</strong> We use cookies to improve user experience and analyze
+                    traffic.</li>
+            </ul>
 
-            <textarea class="" id="comments" rows="3" placeholder="Share your thoughts..."></textarea>
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the collected data to:</p>
+            <ul>
+                <li>Improve website functionality and content.</li>
+                <li>Analyze user behavior for better experience.</li>
+                <li class="mb-5">Respond to inquiries and support requests.</li>
+            </ul>
 
-            <button type="submit" class="submit-btn text-center mt-4">Submit Feedback</button>
+            <h2>4. Cookies and Tracking Technologies</h2>
+            <p class="mb-5">We use cookies to enhance your experience. You can manage or disable cookies through your browser
+                settings.</p>
 
-        </form>
+            <h2>5. Data Security</h2>
+            <p class="mb-5">We take reasonable security measures to protect your data but cannot guarantee 100% security.</p>
+
+            <h2>6. Third-Party Services</h2>
+            <p class="mb-5">We may use third-party services like analytics tools. These third parties have their own privacy
+                policies.</p>
+
+            <h2>8. Changes to This Policy</h2>
+            <p class="mb-5">We may update this Privacy Policy from time to time. Check this page for updates.</p>
+
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions, contact us at <strong>support@origamiforall.com</strong>.</p>
+        </div>
     </div>
 
     <footer class="d-flex justify-content-center">
@@ -354,10 +353,13 @@
         <p class="ps-4">© 2024-2025 OrigamiForAll, All Rights Reserved.</p>
 
     </footer>
-
-
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+<script sc="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+<script src="main.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
