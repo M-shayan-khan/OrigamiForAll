@@ -12,106 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
     body {
         background-color: rgb(255, 245, 235);
     }
 
-    .origami {
-        color: #a11321;
-    }
-
-    .brand-name {
-        font-family: "Pacifico", serif;
-        color: #4a1b00;
-        font-weight: 500;
-        font-size: 30px;
-        text-decoration: none;
-        width: 25%;
-    }
-
-    .offcanvas {
-        background-color: rgba(255, 245, 235, 0.7);
-        backdrop-filter: blur(10px);
-        font-size: 18px;
-    }
-
-    .login-btn,
-    .signUp-btn {
-        background-color: #4a1b00;
-        color: white;
-        padding: 10px 20px;
-        margin: 0 10px;
-        font-size: 14px;
-        border-radius: 50px;
-        transition: 0.3s background-color;
-        display: inline-block;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 30px #0005;
-    }
-
-    .login-btn:hover,
-    .signUp-btn:hover {
-        background-color: #a11321;
-    }
-
-    .navbar-toggler {
-        font-size: 1.25rem;
-        border: none;
-        color: #4a1b00;
-    }
-
-    .navbar-toggler:focus,
-    .btn-close:focus {
-        box-shadow: none;
-        outline: none;
-    }
-
-    .nav-link {
-        color: #4a1b00;
-        font-weight: 500;
-        margin: 0 10px;
-        transition: 0.3s;
-    }
-
-    .login-btn:hover,
-    .signUp-btn:hover {
-        color: white;
-        background-color: #a11321;
-        transform: scale(1.10);
-    }
-
-    .nav-link:hover {
-        color: #a11321;
-        transform: scale(1.10);
-    }
-
-
-    @media (max-width: 991px) {
-
-        .brand-name {
-            font-size: 20px;
-            margin-left: 10px;
-        }
-
-        .nav-link {
-            display: block;
-            text-align: center;
-        }
-
-        .login-btn,
-        .signUp-btn {
-            width: 100%;
-            margin-top: 10px;
-
-        }
-    }
-
     .main {
         font-family: "Marcellus", serif;
         color: black;
+        text-align: justify;
     }
 
     .main h2 {
@@ -119,30 +30,22 @@
         margin-top: 80px;
     }
 
-    .main p {
+    .main .p1,
+    .main .p2 {
         text-align: justify;
     }
 
-    .image-01 img {
-        width: 100%;
+    .image-01 img { 
         max-width: 350px;
         height: auto;
         margin: 80px 30px 0 30px;
         border: 3px solid #a11321;
     }
 
-    div .p1 {
-        max-width: 300px;
-        text-align: center;
+    div .p1, div .p2 {
         margin-top: 20px;
-        margin-left: 109px;
-    }
-
-    div .p2 {
-        max-width: 300px;
-        margin-left: 30px;
-        margin-top: 20px;
-        margin-left: 119px;
+        max-width: 320px;
+        margin-left: 98px;
     }
 
     .note {
@@ -151,91 +54,47 @@
         line-height: 40px;
     }
 
-    footer {
-        min-height: 150px;
-        padding: 20px 15px;
-        align-items: center;
-        flex-direction: column;
-        font-family: sans-serif;
-        margin-top: 100px;
-        text-align: center;
-        margin-right: 40px;
+    @media (min-width: 1200px) {
+        div .p1, div .p2 {
+            margin-left: 200px;
+        }
+
+        .image-01 img {
+            margin-left: 55px;
+            margin-right: 108px;
+        }
     }
 
-    footer .social-links,
-    footer .menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin: 10px 0;
-    }
+    @media (max-width: 991px) {
+        div .p1, div .p2 {
+            font-size: 1.2rem;
+            width: 225px;
+            margin-left: 82px;
 
-    footer .social-links li,
-    footer .menu li {
-        list-style: none;
-    }
+        }
 
-    footer .social-links li a,
-    footer .menu li a {
-        font-size: 1.5rem;
-        color: #494949;
-        margin: 0 10px;
-        display: inline-block;
-        transition: 0.5s;
-        text-decoration: none;
-    }
-
-    footer .social-links li a:hover {
-        transform: translateY(-10px);
-        color: #a11321;
-    }
-
-    footer .menu li a:hover {
-        color: #a11321;
-        transform: scale(1.10);
-    }
-
-    footer p {
-        color: black;
-        text-align: center;
-        font-size: 1.25rem;
-        margin-top: 40px;
-        margin-left: 10px;
+        .image-01 img {
+            width: 255px;
+        }
     }
 
     @media (max-width: 768px) {
-
-        footer {
-            margin-right: 29px;
-        }
-
-        footer .social-links li a,
-        footer .menu li a {
-            font-size: 1.3rem;
-        }
-
-        footer p {
+        
+        
+        div .p1, div .p2 {
             font-size: 1rem;
-            margin-left: 25px;
+            width: 150px;
+            margin-left: 60px;
+            margin-right: 35px;
+
         }
 
-    }
-
-    @media (max-width: 576px) {
-
-        footer {
-            margin-right: 30px;
+        .image-01 img {
+            width: 180px;
         }
 
-        footer .social-links li a,
-        footer .menu li a {
-            font-size: 1rem;
-        }
-
-        footer p {
-            font-size: 0.8rem;
-            margin-left: 10px;
+        .container .h2-1 {
+            font-size: 
         }
     }
 </style>
@@ -275,14 +134,14 @@
     <div class="main container-fluid">
         <div class="container">
             <h2 class="fw-bold">Origami Beginner’s Guide</h2>
-            <p class="mt-4 fs-4">Origami is actually a very easy hobby to pick up, and it’s a lot of fun. All you need
+            <p class="h2-1 mt-4">Origami is actually a very easy hobby to pick up, and it’s a lot of fun. All you need
                 is
                 paper, and you can use pretty much any paper you can find. This guide will show you the main folds, the
                 basic bases that are used as the foundation for a huge number of different models, and then you’ll learn
                 how to fold your first model, the traditional paper crane.</p>
 
             <h2 class="fw-bold">Start With the Basics: The Mountain and Valley Folds</h2>
-            <p class="mt-4 fs-4">These are the two basic folds in origami for beginners. Pretty much every fold is
+            <p class="h2-1 mt-4">These are the two basic folds in origami for beginners. Pretty much every fold is
                 either a mountain fold, a valley fold, or a combination of the two.</p>
 
 
@@ -290,7 +149,7 @@
                 <img src="./images/mountain-fold-1-1024x1024.webp" alt="">
                 <img src="./images/valley-fold-1-1024x1024.webp" alt="">
             </div>
-            <div class="para-01 text-center d-flex fs-5">
+            <div class="para-01 text-center d-flex">
                 <p class="p1">With a <strong>Mountain Fold</strong>, the crease bends the paper down, and the crease
                     resembles a mountain.</p>
                 <p class="p2">With a <strong>Valley Fold</strong>, the crease bends the paper up, and the crease
@@ -299,28 +158,28 @@
             </div>
 
             <h2 class="fw-bold">Common Origami Folds</h2>
-            <p class="mt-4 fs-4">Here are the most common folds with step-by-step instructions on how to make them.
+            <p class="h2-1 mt-4">Here are the most common folds with step-by-step instructions on how to make them.
                 These
                 folds might not look exactly the same as they do in these examples all the time when you’re folding
                 other
                 models. However, these examples should show you how they work so you can figure out what you’re supposed
                 to
                 do when you’re following diagrams.</p>
-            <div class="note p-4 fs-5 mt-5">
+            <div class="note p-4 mt-5">
                 <p class="mt-2"><strong>📜 Note:</strong> These diagrams are intentionally exaggerated and distorted to
                     show as many flaps of paper as possible and make them easier to follow. When you fold origami models
                     on your own almost all the time, you’ll need to crease each fold very well and press everything
                     completely flat.</p>
             </div>
             <h2 class="fw-bold">Inside Reverse Fold</h2>
-            <p class="mt-4 fs-4">This is a very common fold in origami where the paper is folded inside of the model.
+            <p class="h2-1 mt-4">This is a very common fold in origami where the paper is folded inside of the model.
             </p>
 
             <div class="image-01 container text-center">
                 <img src="./images/inside-reverse-fold-1-min.webp" alt="">
                 <img src="./images/inside-reverse-fold-2-min.webp" alt="">
             </div>
-            <div class="para-01 text-center d-flex fs-5">
+            <div class="para-01 text-center d-flex">
                 <p class="p1"><strong>Step 01: </strong>Start with a square of paper, white side up, and fold it in half
                     diagonally. This isn’t actually part of the Inside Reverse Fold, but it’ll give you a shape that you
                     can use to make the Inside Reverse Fold on.</p>
@@ -333,7 +192,7 @@
                 <img src="./images/inside-reverse-fold-3-min.webp" alt="">
                 <img src="./images/inside-reverse-fold-4-min.webp" alt="">
             </div>
-            <div class="para-01 text-center d-flex fs-5">
+            <div class="para-01 text-center d-flex">
                 <p class="p1"><strong>Step 03: </strong>Crease this fold well and then unfold it.</p>
                 <p class="p2"><strong>Step 04: </strong>Turn the paper over.</p>
             </div>
@@ -342,7 +201,7 @@
                 <img src="./images/inside-reverse-fold-5-min.webp" alt="">
                 <img src="./images/inside-reverse-fold-6-min.webp" alt="">
             </div>
-            <div class="para-01 text-center d-flex fs-5">
+            <div class="para-01 text-center d-flex">
                 <p class="p1"><strong>Step 05: </strong>Make a fold along the dotted line. This will be the opposite
                     side of the fold you made earlier. Now you’re folding this the other way.</p>
                 <p class="p2"><strong>Step 06: </strong>Crease this fold well and then unfold it.</p>
@@ -352,7 +211,7 @@
                 <img src="./images/inside-reverse-fold-7-min.webp" alt="">
                 <img src="./images/inside-reverse-fold-8-min.webp" alt="">
             </div>
-            <div class="para-01 text-center d-flex fs-5">
+            <div class="para-01 text-center d-flex">
                 <p class="p1"><strong>Step 07: </strong>Turn the paper over again so it’s back the way it was before.
                 </p>
                 <p class="p2"><strong>Step 08: </strong>Push the paper inside the model following the two folds you made
@@ -363,7 +222,7 @@
                 <img src="./images/inside-reverse-fold-9-min.webp" alt="">
                 <img src="./images/inside-reverse-fold-10-min.webp" alt="">
             </div>
-            <div class="para-01 text-center d-flex fs-5">
+            <div class="para-01 text-center d-flex">
                 <p class="p1"><strong>Step 09: </strong>Turn the paper over again so it’s back the way it was before.
                 </p>
                 <p class="p2"><strong>The complete Inside Reverse Fold. </strong>The dotted line shows the path of the
@@ -371,12 +230,12 @@
             </div>
 
             <h2 class="fw-bold">Looking for Even More Origami Instructions?</h2>
-            <p class="mt-4 fs-4">We have an absolutely massive database of easy origami diagrams. If you’ve successfully
+            <p class="h2-1 mt-4">We have an absolutely massive database of easy origami diagrams. If you’ve successfully
                 understood all the techniques on this page, you should have no trouble folding anything that’s either
                 Beginner or Easy level difficulty.</p>
-            <p class="mt-4 fs-4">If you prefer video instructions, we have a giant database of those, too. Video
+            <p class="h2-1 mt-4">If you prefer video instructions, we have a giant database of those, too. Video
                 instructions can be especially helpful as you can see exactly how the paper moves between each step.</p>
-            <p class="mt-4 fs-4">Instructions for the best origami models can only be found in books. If you’re still
+            <p class="h2-1 mt-4">Instructions for the best origami models can only be found in books. If you’re still
                 looking for more awesome things to fold, check out our list of best origami books. We’ve written reviews
                 and made lists of the models you’ll find in each one. No matter what you’re looking for, you’ll
                 definitely find some cool things to fold.</p>
